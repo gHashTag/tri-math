@@ -36,6 +36,17 @@ behaviors:
     when: "Computing magnitude"
     then: "Returns sqrt(z.re² + z.im²)"
 
+# ═══════════════════════════════════════════════════════════════════════════════
+# NOTE, 2026-08-12 — GAMMA is notation, not a physical identification.
+# The identification of φ⁻³ with the Barbero-Immirzi parameter was rejected in
+# trinity/docs/DELTA-001.md on 2026-03-28 (status FALSIFIED: 0.236068 vs canonical
+# 0.237533, φ⁻³ low by 0.617%; source Rovelli & Vidotto, "Covariant Loop Quantum
+# Gravity", 2014). The rejection removed the physical identification and left the
+# letter γ in place. GAMMA below is retained as notation for φ⁻³; the claim that it
+# IS the Barbero-Immirzi parameter is withdrawn. The numeric value is unchanged, so
+# nothing generated from this spec changes.
+# ═══════════════════════════════════════════════════════════════════════════════
+
 constants:
   - name: PHI
     type: f64
@@ -50,7 +61,7 @@ constants:
   - name: GAMMA
     type: f64
     value: 0.23606797749978969641
-    description: "Barbero-Immirzi parameter γ = φ⁻³"
+    description: "~~Barbero-Immirzi parameter γ = φ⁻³~~ — WITHDRAWN 2026-08-12; original wording struck, not removed. γ = φ⁻³ is retained here as notation only: the identification of φ⁻³ with the Barbero-Immirzi parameter was rejected in trinity/docs/DELTA-001.md on 2026-03-28 — 0.236068 vs canonical 0.237533, low by 0.617%."
 
   - name: TRINITY
     type: f64
